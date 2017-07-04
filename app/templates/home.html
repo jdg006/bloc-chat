@@ -1,6 +1,9 @@
 <h1 >{{home.title}}</h1>
+<div ng-controller="ModalCtrl as $ctrl">
+  <button type="button" class="btn btn-default" ng-click="$ctrl.open()">New room</button>
+</div>
 <div class="chat-rooms" ng-repeat="room in home.rooms">
   <div class="room">
-    Room {{$index+1}}
+  {{room.$value}}
   </div>
 </div>

@@ -1,0 +1,21 @@
+<div>
+
+        <div class="modal-header">
+            <h3 class="modal-title" id="modal-title">Create a new room</h3>
+        </div>
+        <div class="modal-body" id="modal-body">
+          <form class="new-room">
+            <br>Room Name: <input ng-model="$ctrl.name" type="text" name="firstname" value=""><br>
+            <br>
+          </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="submit" ng-click="$ctrl.ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+        </div>
+
+
+        <div class="modal-header">
+            <h3 class="modal-title" id="modal-title-{{name}}">The {{name}} modal!</h3>
+        </div>
+</div>

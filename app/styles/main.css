@@ -1,0 +1,52 @@
+*,*::before, *::after{
+  -moz-box-sizzing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+  font-size: 100%:
+}
+.chat-room-container{
+  background-color: white;
+  height: 500px;
+  width: 22%;
+  float:left;
+  border-style: solid;
+  border-width: medium;
+}
+.title{
+  background-color: white;
+  font-size: 2rem;
+  text-decoration: none;
+
+}
+.rooms{
+  font-size: 1.5rem;
+
+}
+.new-room-button  {
+  text-decoration: none;
+  height: 2.2rem;
+
+}
+.messages-container{
+float: left;
+  border-style: solid;
+  width: 76%;
+  border-left: 0px;
+}
+.messages{
+  border: 1px;
+  border-style: solid;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  font-size: 1.3rem;
+  border-top:
+}
+.home-page{
+  height:100%;
+  width:100%;
+  position:absolute;
+  background-color: lightgrey;
+}

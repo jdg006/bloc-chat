@@ -1,9 +1,18 @@
-<h1 >{{home.title}}</h1>
-<div ng-controller="ModalCtrl as $ctrl">
-  <button type="button" class="btn btn-default" ng-click="$ctrl.open()">New room</button>
-</div>
-<div class="chat-rooms" ng-repeat="room in home.rooms">
-  <div class="room">
-  {{room.$value}}
+<div class="home-page" ng-controller="HomeCtrl as home">
+  <section class="chat-room-container">
+    <div class="title">
+      <p>{{home.title}}  <button class="new-room-button"type="button" class="btn btn-default" ng-click="$ctrl.open()" ng-controller="ModalCtrl as $ctrl">New room</button></p>
+    </div>
+    <div class="chat-rooms" ng-repeat="room in home.rooms" ng-click="home.setCurrentRoom(room)">
+      <div class="rooms">
+        {{room.name}}
+      </div>
+    </div>
+  </section>
+  <section class="messages-container">
+    <h2>Room: {{home.currentRoom.name}}</h2>
+  <div class="messages" ng-repeat="message in home.messages">
+    {{message.content}}
   </div>
+  </section>
 </div>

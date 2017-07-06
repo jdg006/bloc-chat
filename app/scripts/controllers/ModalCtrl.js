@@ -14,7 +14,10 @@ function ModalCtrl ($uibModal, $log, Room) {
     });
 
     modalInstance.result.then(function (name) {
-      var room={$value:name};
+      var room={
+        name:name
+
+      };
       Room.add(room)
       }, function () {
         $log.info('Modal dismissed at: ' + new Date());

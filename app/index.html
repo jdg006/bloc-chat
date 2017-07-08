@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Bloc Base Project</title>
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.css">
+
 </head>
 <body>
 
@@ -18,8 +20,13 @@
      <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
      <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
      <!-- AngularUI Bootstrap -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script><script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+     <!-- Angular cookies -->
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-cookies.js"></script>
+     <script>
+
      // Initialize Firebase
+
      var config = {
        apiKey: "AIzaSyD1K3hqLLfc1MbIwupbzf75DlyP4fy7ScU",
        authDomain: "bloc-chat-da5bf.firebaseapp.com",
@@ -35,8 +42,10 @@
      <script src="/scripts/controllers/HomeCtrl.js"></script>
      <script src="/scripts/controllers/ModalCtrl.js"></script>
      <script src="/scripts/controllers/ModalInstanceCtrl.js"></script>
+     <script src="/scripts/controllers/UsernameModalCtrl.js"></script>
      <script src="/scripts/services/Room.js"></script>
      <script src="/scripts/services/Message.js"></script>
+     <script src="/scripts/services/BlocChatCookies.js"></script>
 
 
 </body>

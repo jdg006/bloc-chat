@@ -3,7 +3,7 @@
 
 
 
-    var currentUser = $cookies.get('blocChatCurrentUser');
+    currentUser = $cookies.get('blocChatCurrentUser');
 
     if (!currentUser || currentUser === '') {
 

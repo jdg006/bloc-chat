@@ -8,11 +8,13 @@
     return  $firebaseArray(ref.orderByChild("roomId").equalTo(roomId));
 }
 
+    Message.send= function(message){
 
+      messages.$add(message);
+    }
 
     return Message;
     };
-
 
   angular
     .module('blocChat')

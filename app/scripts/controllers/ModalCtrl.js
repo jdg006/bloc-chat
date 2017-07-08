@@ -14,7 +14,7 @@ function ModalCtrl ($uibModal, $log, Room) {
     });
 
     modalInstance.result.then(function (name) {
-      console.log(name);
+      //console.log(name);
       var room={
         name:name
 

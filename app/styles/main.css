@@ -10,7 +10,7 @@ html{
 .chat-room-container{
   background-color: white;
   height: 500px;
-  width: 22%;
+  width: 24%;
   float:left;
   border-style: solid;
   border-width: medium;
@@ -49,4 +49,21 @@ float: left;
   width:100%;
   position:absolute;
   background-color: lightgrey;
+}
+.send-message{
+
+width:76%;
+float:right;
+height:10%;
+}
+.send-message-text-field{
+  width: 100%;
+
+
+}
+.send-button{
+  height: 3rem;
+  width:4rem;
+  font-size: 15pt;
+
 }
